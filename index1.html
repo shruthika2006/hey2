@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LandChain India</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+    scroll-behavior:smooth;
+}
+
+/* Header */
+header{
+    background:#0d1b2a;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00b4d8;
+}
+
+/* Hero */
+.hero{
+    height:100vh;
+    background:linear-gradient(to right,#1b263b,#415a77);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+    animation:fadeIn 2s ease-in-out;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.hero button{
+    padding:14px 30px;
+    border:none;
+    background:#00b4d8;
+    color:white;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.hero button:hover{
+    background:#0096c7;
+    transform:scale(1.05);
+}
+
+/* Sections */
+.section{
+    padding:100px 50px;
+    text-align:center;
+}
+
+.section h2{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.section p{
+    max-width:800px;
+    margin:0 auto;
+    font-size:18px;
+    line-height:1.7;
+}
+
+.light{
+    background:white;
+}
+
+/* Features */
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#1b263b;
+    color:white;
+    width:260px;
+    padding:25px;
+    border-radius:10px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:#415a77;
+}
+
+/* Steps */
+ol{
+    max-width:600px;
+    margin:30px auto;
+    text-align:left;
+    font-size:18px;
+}
+
+ol li{
+    margin-bottom:15px;
+}
+
+/* Footer */
+footer{
+    background:#0d1b2a;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+/* Animation */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(-20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* Responsive */
+@media(max-width:768px){
+    nav{
+        display:none;
+    }
+    .hero h1{
+        font-size:32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">LandChain India</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#how">How It Works</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Secure Land Registry Using Blockchain</h1>
+    <p>Transparent • Tamper-Proof • Digitally Verified</p>
+    <button>Explore Platform</button>
+</section>
+
+<section id="about" class="section">
+    <h2>About LandChain India</h2>
+    <p>
+        LandChain India is a blockchain-powered secure land registry system 
+        designed to eliminate land fraud, ensure transparency in property 
+        transactions, and provide tamper-proof digital ownership records 
+        across India.
+    </p>
+</section>
+
+<section id="features" class="section light">
+    <h2>Key Features</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>🔒 Tamper-Proof Records</h3>
+            <p>Blockchain ensures immutable land ownership records.</p>
+        </div>
+        <div class="card">
+            <h3>⚡ Instant Verification</h3>
+            <p>Smart contracts validate transactions instantly.</p>
+        </div>
+        <div class="card">
+            <h3>🌐 Transparency</h3>
+            <p>Public ledger ensures transparent property transfers.</p>
+        </div>
+    </div>
+</section>
+
+<section id="how" class="section">
+    <h2>How It Works</h2>
+    <ol>
+        <li>Land documents are digitized and verified.</li>
+        <li>Data is securely stored on blockchain network.</li>
+        <li>Smart contract validates property transfer.</li>
+        <li>Ownership is permanently recorded and secured.</li>
+    </ol>
+</section>
+
+<section id="contact" class="section light">
+    <h2>Contact Us</h2>
+    <p>Email: support@landchainindia.in</p>
+    <p>Phone: +91 98765 43210</p>
+</section>
+
+<footer>
+    © 2026 LandChain India | Blockchain for Secure Governance
+</footer>
+
+</body>
+</html>
